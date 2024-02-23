@@ -1,1 +1,3 @@
-module sma-battery-charging-prediction
+module github.com/alexander-redmann-teaching/sma-battery-charging-prediction
+
+go 1.22
