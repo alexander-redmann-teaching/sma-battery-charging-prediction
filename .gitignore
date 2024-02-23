@@ -21,3 +21,4 @@
 go.work
 /.idea/
 *.iml
+/config-test.properties
