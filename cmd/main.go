@@ -2,10 +2,10 @@ package main
 
 import (
 	"flag"
+	"github.com/alexander-redmann-teaching/sma-battery-charging-prediction/internal"
 	"github.com/magiconair/properties"
 	"log"
 )
-import "github.com/alexander-redmann-teaching/sma-battery-charging-prediction/internal"
 
 func main() {
 	var configFile string
