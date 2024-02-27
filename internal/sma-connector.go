@@ -14,8 +14,8 @@ func ConnectToInverter(inverterUrl string) {
 	inverterIp := ""
 
 	if err != nil {
-		log.Fatal("Test: ", err)
 		inverterIp = inverterUrl
+		log.Println("Test: ", err)
 	} else {
 		inverterIp = ips[0].String()
 	}
@@ -62,7 +62,7 @@ func ConnectToInverter(inverterUrl string) {
 
 	err = client.Close()
 	if err != nil {
-		log.Fatal("Error on closing connection to inverter via modbus: ", err)
+		log.Println("Error on closing connection to inverter via modbus: ", err)
 		return
 	}
 
