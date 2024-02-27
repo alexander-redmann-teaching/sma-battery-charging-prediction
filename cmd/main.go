@@ -17,4 +17,7 @@ func main() {
 	apiToken, _ := p.Get("tibber.api.token")
 	internal.GetPriceForecast(apiUrl, apiToken)
 
+	modbusUrl, _ := p.Get("modbus.url")
+	internal.ConnectToInverter(modbusUrl)
+
 }
